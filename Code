@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - 2050-7</title>
+  
+  
+  
+  
+<style>
+body {
+  background-color: coral;
+}
+
+
+.correct {
+  background: green;
+}
+
+.incorrect{
+  background: red;
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <h1><p style="color:purple">Jakes super easy quiz on shapes and nothing else<p></h1>
+<ol>
+  <li>how many sides does a square have<input  data-correct="4"/></li>
+  <li>a triangle has 9 sides T/F<input  data-correct="f"/></li>
+  <li>what shape has 6 60 degree angles<input data-correct="hexagon"/></li>
+    <li>what shape is the box next to this sentance<input data-correct="rectangle"/></li>
+  <li>what is the shape bellow<input  data-correct="Square"/></li>
+  <img alt="Square PNG" class="n3VNCb" src="https://pngimg.com/uploads/square/square_PNG19.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 100px; height: 100px; margin: 0px;">
+  <li>if you add the number of sides of a rectangle and decagon how many sides would there be<input  data-correct="14"/></li>
+  <li>what are the first 3 letters of each of the shapes below in order of smallest number of sides to most<input  data-correct="cirtrisqu"/></li>
+  <img alt="Bruno Munari: Square, Circle, Triangle: Munari, Bruno: 9781616894122:  Amazon.com: Books" class="n3VNCb" src="https://images-na.ssl-images-amazon.com/images/I/61tC4kGj66L.jpg" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 100px; height: 100.012px; margin: 0px;">
+  <li>if two triangles have two congruent angles and one congruent side are they congruent<input  data-correct="Yes"/></li>
+  <li>how many letters are there in triangle<input  data-correct="8"/></li>
+  <li>What is the capital of Zimbabwe<input  data-correct="Harare"/></li>
+</ol>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  
+      <script id="rendered-js" >
+console.clear();
+
+$("input").change(onChange)
+
+function onChange(evt){
+  let correct = $(this).data("correct");
+  let response = $(this).val();
+  try{
+    correct = correct.toUpperCase();
+    response = response.toUpperCase();
+  }
+  catch(err) {
+    
+  }
+
+  console.log(correct,response);
+  if(correct == response){
+   $(this).removeClass('incorrect').addClass('correct');
+  } else{
+    $(this).removeClass('correct').addClass('incorrect');
+  }
+}
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
